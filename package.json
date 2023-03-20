@@ -1,0 +1,26 @@
+{
+  "name": "@heiwa4126/esm-dirname",
+  "version": "1.0.0",
+  "description": "Retrieve script directory and filename.",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "example": "node ./examples/ex1.js"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "heiwa4126@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heiwa4126/npm-esm-dirname"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ]
+}

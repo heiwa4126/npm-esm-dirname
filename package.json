@@ -4,6 +4,7 @@
   "description": "Retrieve script directory and filename.",
   "type": "module",
   "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "scripts": {
     "example": "node ./examples/ex1.js"
   },
@@ -13,7 +14,7 @@
   "author": "heiwa4126@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^18.15.3"
+    "@types/node": "^18.15.5"
   },
   "repository": {
     "type": "git",

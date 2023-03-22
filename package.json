@@ -1,6 +1,6 @@
 {
   "name": "@heiwa4126/esm-dirname",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Retrieve script directory and filename.",
   "type": "module",
   "main": "./src/index.js",

@@ -1,7 +1,7 @@
 # @heiwa4126/esm-dirname (npm-esm-dirname)
 
-- [English](./REDAME.md)
-- [日本語](./REDAME-ja.md)
+- [English](./README.md)
+- [日本語](./README-ja.md)
 
 This module provides functionality to retrieve the script directory and filename and set the script directory as the current working directory using Node.js’s `path` and `url` modules for **ECMAScript**.
 

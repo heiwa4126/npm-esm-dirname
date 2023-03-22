@@ -1,7 +1,7 @@
 # @heiwa4126/esm-dirname (npm-esm-dirname)
 
-- [English](./REDAME.md)
-- [日本語](./REDAME-ja.md)
+- [English](./README.md)
+- [日本語](./README-ja.md)
 
 このモジュールは、**Node.js の ECMAScript 用**に
 `path` と `url` モジュールを使用して、

@@ -1,6 +1,6 @@
 {
   "name": "@heiwa4126/esm-dirname",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Retrieve script directory and filename.",
   "type": "module",
   "main": "./src/index.js",
@@ -22,6 +22,7 @@
   },
   "files": [
     "src",
-    "README.md"
+    "README.md",
+    "README-ja.md"
   ]
 }

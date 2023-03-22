@@ -11,24 +11,16 @@ function getCallStack() {
 }
 
 /**
- * 現在のスクリプトの情報を取得する関数
- * @returns {{ __dirname: string, __filename: string, setCwdToScriptDir: function }} 現在のスクリプトのディレクトリ名(__dirname)、ファイル名(__filename)、およびスクリプトのディレクトリをカレントディレクトリに変更するsetCwdToScriptDir()関数を含むオブジェクト
- *
- * @example
- *
- * // スクリプトのディレクトリを取得する例
- * const { __dirname } = getCurrentScriptInfo();
- * console.log(__dirname); // /path/to/your/script/directory
- *
- * // スクリプトのファイル名を取得する例
- * const { __filename } = getCurrentScriptInfo();
- * console.log(__filename); // /path/to/your/script.js
- *
- * // スクリプトのディレクトリをカレントディレクトリに変更する例
- * const { setCwdToScriptDir } = getCurrentScriptInfo();
- * setCwdToScriptDir();
- * console.log(process.cwd()); // /path/to/your/script/directory
- */
+Retrieves the directory name and filename of the current ES module script, and provides a function to change the working directory to the script directory.
+@function
+@returns {Object} An object containing the directory name, filename, and a function to set the current working directory to the script directory.
+@throws {TypeError} If the current script is not an ES module.
+@example
+const { __dirname, __filename, setCwdToScriptDir } = esmDirname();
+console.log(__dirname); // Outputs the directory name of the current script
+console.log(__filename); // Outputs the filename of the current script
+setCwdToScriptDir(); // Changes the working directory to the directory of the current script
+*/
 function esmDirname() {
   const stack = getCallStack();
   const __filename = url.fileURLToPath(stack[1].getFileName());

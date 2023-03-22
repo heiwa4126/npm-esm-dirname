@@ -23,9 +23,3 @@ console.log(__dirname); // Script directory
 console.log(__filename); // Script filename
 setCwdToScriptDir(); // Set script directory as current working directory
 ```
-
-## Exported variables and functions
-
-- \_\_dirname: The directory where the script is located.
-- \_\_filename: The script filename.
-- setCwdToScriptDir: A function that sets the script’s directory as the current working directory.
